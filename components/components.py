@@ -6,6 +6,8 @@ class WebElement:
     def __init__(self, driver, locator=''):
         self.locator = locator
         self.driver = driver
+        self.sample = '© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED'
+        self.sample_2 = 'Please select an item from left to start practice'
 
     def click(self):
         self.find_element().click()
@@ -22,3 +24,11 @@ class WebElement:
 
     def get_text(self):
         return str(self.find_element().text)
+
+    def check_text(self):
+
+        try:
+            self.find_element().text == self.sample
+        except NoSuchElementException:
+            return False
+        return True
