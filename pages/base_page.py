@@ -25,3 +25,6 @@ class BasePage:
         if self.get_url() == self.base_url:
             return True
         return False
+
+    def skr(self):
+        self.driver.execute_script("window.scrollTo(0, 1080)")
