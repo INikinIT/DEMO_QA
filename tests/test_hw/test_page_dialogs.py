@@ -22,4 +22,4 @@ def test_navigation_modal(browser):
     browser.forward()
     assert demo_qa.equal_url()
     assert browser.title == 'DEMOQA'
-    browser.set_window_size(1000, 1000)
+    browser.set_window_size(1000, 1000)  #

@@ -31,7 +31,7 @@ def test_state_and_city(browser):
     form_page.skr()
     form_page.state.click()
     time.sleep(4)
-    form_page.state.send_keys('Haryana')
+    form_page.state.send_keys('Haryana')  # Тест не работает! Нужен ответ, почему?
     time.sleep(4)
     form_page.city.click()
     form_page.city.send_keys('Panipat')

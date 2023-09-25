@@ -10,4 +10,4 @@ def test_text_box(browser):
     text_box.address.send_keys('Spb.ru')
     text_box.btn_submit.click()
     assert text_box.check_name.get_text() == 'Name:My name'
-    assert text_box.check_address.get_text() == 'Current Address :Spb.ru'
+    assert text_box.check_address.get_text() == 'Current Address :Spb.ru'  #

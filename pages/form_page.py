@@ -20,4 +20,4 @@ class FormPage(BasePage):
         self.state = WebElement(driver, '#state')
         self.state_choice = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1wa3eu0-placeholder')
         self.city = WebElement(driver, '#city')
-        self.city_choice = WebElement(driver, 'Karnal')
+        self.city_choice = WebElement(driver, 'Panipat')
