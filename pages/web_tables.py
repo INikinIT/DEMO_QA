@@ -17,4 +17,4 @@ class WebTables(BasePage):
         self.department = WebElement(driver, '#department')
         self.submit = WebElement(driver, '#submit')
         self.edit = WebElement(driver, '#edit-record-4 > svg > path')
-        self.delete = WebElement(driver, '#delete-record-4 > svg > path')
+        self.delete = WebElement(driver, '#delete-record-4 > svg > path')  #

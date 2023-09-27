@@ -24,4 +24,4 @@ class FormPage(BasePage):
         self.check_first_name = WebElement(driver, '#firstName')
         self.check_last_name = WebElement(driver, '#lastName')
         self.check_user_email = WebElement(driver, '#userEmail')
-        self.user_form = WebElement(driver, '#userForm')
+        self.user_form = WebElement(driver, '#userForm')  #

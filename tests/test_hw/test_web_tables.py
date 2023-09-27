@@ -23,4 +23,4 @@ def test_check_data(browser):
     web_tables.first_name.clear()
     web_tables.first_name.send_keys('Jonny')
     web_tables.submit.click()
-    web_tables.delete.click()
+    web_tables.delete.click()  #
