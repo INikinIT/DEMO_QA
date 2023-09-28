@@ -17,4 +17,12 @@ class WebTables(BasePage):
         self.department = WebElement(driver, '#department')
         self.submit = WebElement(driver, '#submit')
         self.edit = WebElement(driver, '#edit-record-4 > svg > path')
-        self.delete = WebElement(driver, '#delete-record-4 > svg > path')  #
+        self.delete = WebElement(driver, '#delete-record-4 > svg > path')
+        self.no_rows = WebElement(driver, 'div.rt-noData')
+        self.delete_3 = WebElement(driver, 'span[title="Delete"]')
+
+        self.rows = WebElement(driver, '.-pageSizeOptions > select')
+        self.rows_5 = WebElement(driver, 'option:nth-child(1)')
+        self.previous = WebElement(driver, ' .-previous > button')
+        self.next = WebElement(driver, '.-next > button')
+        self.str = WebElement(driver, 'input[type=number]')
