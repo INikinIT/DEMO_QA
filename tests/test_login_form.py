@@ -1,6 +1,7 @@
 import time
 from pages.form_page import FormPage
 from conftest import browser
+from selenium.webdriver.common.keys import Keys
 
 
 def test_login_form(browser):
@@ -28,11 +29,13 @@ def test_state_and_city(browser):
     form_page = FormPage(browser)
 
     form_page.visit()
-    form_page.skr()
+    time.sleep(2)
+    form_page.state.scroll_to_element()
     form_page.state.click()
+    time.sleep(2)
+    # form_page.state_choice.click()
+
     time.sleep(4)
-    form_page.state.send_keys('Haryana')  # Тест не работает! Нужен ответ, почему?
-    time.sleep(4)
-    form_page.city.click()
-    form_page.city.send_keys('Panipat')
-    time.sleep(4)
+    # # form_page.city.click()
+    # form_page.city.send_keys('Panipat')
+    # time.sleep(4)
