@@ -9,3 +9,8 @@ class PageDialog(BasePage):
 
         self.check_quantity = WebElement(driver, '.element-list.collapse.show >  ul > li.btn.btn-light')
         self.tools_qa = WebElement(driver, 'header > a > img')
+        self.small_modal = WebElement(driver, '#showSmallModal')
+        self.large_modal = WebElement(driver, '#showLargeModal')
+        self.window = WebElement(driver, 'body > div.fade.modal.show > div > div')
+        self.close_small = WebElement(driver, '#closeSmallModal')
+        self.close_large = WebElement(driver, '#closeLargeModal')

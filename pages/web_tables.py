@@ -26,3 +26,12 @@ class WebTables(BasePage):
         self.previous = WebElement(driver, ' .-previous > button')
         self.next = WebElement(driver, '.-next > button')
         self.str = WebElement(driver, 'input[type=number]')
+
+        self.head_first = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(1)')
+        self.head_name = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(2)')
+        self.head_age = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(3)')
+        self.head_email = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(4)')
+        self.head_salary = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(5)')
+        self.head_department = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(6)')
+        self.head_action = WebElement(driver, 'div.rt-thead.-header > div > div:nth-child(7)')
+        self.head_page = WebElement(driver, 'div.rt-thead.-header > div > div')
